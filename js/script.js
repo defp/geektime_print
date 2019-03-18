@@ -16,5 +16,7 @@
         }
       }
     })
+
+    $('body').css({ width: "1000px", margin: "auto"})
   })
 })();
