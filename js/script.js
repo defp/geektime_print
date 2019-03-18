@@ -1,5 +1,6 @@
 (function () {
   id = window.location.pathname.split("/")[3]
+
   $("body").on("dblclick", "h1", function () {
     $.ajax({
       url: "https://time.geekbang.org/serv/v1/article",
@@ -17,6 +18,6 @@
       }
     })
 
-    $('body').css({ width: "1000px", margin: "auto"})
+    $('body').css({ "width": "1000px", "margin": "auto", "margin-top": "30px"})
   })
 })();
