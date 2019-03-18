@@ -11,7 +11,8 @@
       success: function (rsp) {
         if (rsp.data) {
           article_content = rsp.data.article_content
-          $("#app").replaceWith(article_content)
+          title = "<h1 id='title'>" + rsp.data.article_title + "</h1>"
+          $("#app").replaceWith(title + article_content)
         } else {
           console.log("api error ", rsp.error.msg)
         }
