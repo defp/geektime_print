@@ -20,5 +20,6 @@
     })
 
     $('body').css({ "width": "1000px", "margin": "auto", "margin-top": "30px"})
+    $('img').css({ "width": "1000px"})
   })
 })();
