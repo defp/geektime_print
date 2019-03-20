@@ -6,8 +6,7 @@
     "content_scripts": [
       {
         "matches":["*://time.geekbang.org/*"],
-        "js":["js/jquery-3.3.1.min.js","js/script.js"],
-        "css":["fix.css"]
+        "js":["js/jquery-3.3.1.min.js","js/script.js"]
       }
     ],
     "permissions": ["activeTab"],

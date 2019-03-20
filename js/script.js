@@ -18,6 +18,11 @@
               <head>
               <meta charset="utf-8">
               <title>${rsp.data.article_title}</title>
+              <style>
+                #print-content {width: 1000px; margin: auto; }
+                #print-conent img {width: 1000px; }
+                #print-content pre {border: 1px solid black; padding: 10px; }
+              </style>
               </head>
               <body>
                 <div id='print-content'>
