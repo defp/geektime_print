@@ -1,6 +1,6 @@
  {
     "name": "GeekTime Print Page",
-    "version": "1.01",
+    "version": "1.2",
     "description": "GeekTime",
     "manifest_version": 2,
     "content_scripts": [
