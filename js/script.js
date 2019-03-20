@@ -13,6 +13,8 @@
           article_content = rsp.data.article_content
           title = "<h1 id='title'>" + rsp.data.article_title + "</h1>"
           $("#app").replaceWith(title + article_content)
+
+          $('img').css({ "width": "1000px" })
         } else {
           console.log("api error ", rsp.error.msg)
         }
@@ -20,6 +22,5 @@
     })
 
     $('body').css({ "width": "1000px", "margin": "auto", "margin-top": "30px"})
-    $('img').css({ "width": "1000px"})
   })
 })();
