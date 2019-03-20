@@ -22,6 +22,8 @@
                 #print-content {width: 1000px; margin: auto; }
                 #print-conent img {width: 1000px; }
                 #print-content pre {border: 1px solid black; padding: 10px; }
+                p {color: #4c4c4c;}
+                strong {color: #000; font-weight: 700;}
               </style>
               </head>
               <body>
