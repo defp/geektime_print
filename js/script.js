@@ -1,7 +1,6 @@
-(function () {
-
-  $("body").on("dblclick", "h1", function () {
-    var id = window.location.pathname.split("/")[3]
+(function() {
+  $("body").on("dblclick", "h1", function() {
+    var id = window.location.pathname.split("/")[3];
 
     $.ajax({
       url: "https://time.geekbang.org/serv/v1/article",
@@ -10,7 +9,7 @@
       dataType: "json",
       data: JSON.stringify({ id: id, include_neighbors: true }),
 
-      success: function (rsp) {
+      success: function(rsp) {
         if (rsp.data) {
           var html = `
             <!DOCTYPE html>
@@ -29,19 +28,19 @@
               <body>
                 <div id='print-content'>
                   <h1 id='title'>
-                    ${ rsp.data.article_title}
+                    ${rsp.data.article_title}
                   </h1>
                   ${rsp.data.article_content}
                 </div>
               </body>
             </html>
-            `
+            `;
 
-          $("html").html(html)
+          $("html").html(html);
         } else {
-          console.log("api error ", rsp.error.msg)
+          console.log("api error ", rsp.error.msg);
         }
       }
-    })
-  })
+    });
+  });
 })();
