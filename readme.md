@@ -7,6 +7,6 @@
 
 ## 安装插件
 
-![](chorome0.png)
+![](chrome0.png)
 
-![](chorome1.png)
+![](chrome1.png)
